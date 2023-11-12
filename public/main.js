@@ -16,7 +16,7 @@ Array.from(edit).forEach(function(element) {
         const id = appointment.childNodes[1].innerText
         const name = appointment.childNodes[3].innerText
         const reason = appointment.childNodes[5].innerText
-        const date = appointment.childNodes[9].innerText
+        const date = appointment.childNodes[12].innerText
 
         document.getElementById('update-form').classList.toggle('hidden')
         document.getElementById('update-id').value = id
