@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <title>Appointment Scheduler</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ea19d3d339.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Main Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+          <h3>Appointments</h3>
+          <ul class="appointments">
+          <% for(var i=0; i<appointments.length; i++) {%>
+            <li class="appointment">
+              <span class="hidden"><%= appointments[i]._id %></span>
+              <span><%= appointments[i].name %></span>
+              <span><%= appointments[i].reason %></span>
+              <!-- Date code from ChatGPT -->
+              <span> Date: <%= 
+                new Date(appointments[i].date).toISOString().slice(5, 7) + '/' + new Date(appointments[i].date).toISOString().slice(8, 10) + '/' + new Date(appointments[i].date).toISOString().slice(0, 4);%></span>
+              <span class="hidden"><%= appointments[i].date %></span>
+              <span><i class="fa-regular fa-pen-to-square" aria-hidden="true"></i></span>
+              <span><i class="fa-solid fa-trash" style="color: #000000;" aria-hidden="true"></i></span>
+            </li>
+          <% } %>
+          </ul>
+
+          <h2>Request an appointment</h2>
+        <% if (user.local.email) { %>
+          <form action="/appointments" method="POST">
+            <input type="text" placeholder="Your name" name="name" required>
+            <input type="text" placeholder="Reason for appointment" name="reason" required>
+            <input id="first-date" type="date" name="date" min='' required>
+            <button type="submit">Submit</button>
+          </form>
+        <% } %>
+
+        
+        <form action="/appointments" method="PUT" id="update-form" class= "hidden">
+          <h2>Update an existing appointment</h2>
+          <input id="update-id" type="text"  value="" class="hidden" name="id">
+          <input id="update-name" type="text"  value="" name="name">
+          <input id="update-reason"  type="text" value="" name="reason">
+          <input id="update-date"  type="date" value="" name="date" min=''>
+          <button id="update-button" type="submit">Submit</button>
+        </form>
+
+      </div>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
