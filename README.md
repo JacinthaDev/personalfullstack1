@@ -1,9 +1,11 @@
 # 📅 Appointment Scheduler
 
+<img width="1315" alt="appointment-login" src="https://github.com/JacinthaDev/personalfullstack1/assets/129231721/9bbcee8c-aeb9-49be-b914-428a4659ce12">
 
+<img width="1207" alt="appointment scheduler" src="https://github.com/JacinthaDev/personalfullstack1/assets/129231721/5cfefbae-c1bb-409e-92b4-7103647134f1">
 
 # About this project
-This project is an advanced version of a previous repo called "savage-complete" that now includes authentication. Login to be taken to a message board to add 21 Savage lyrics.
+Keep track of your calendar with this appointment scheduler.
 
 
 ### View my project here: 
@@ -21,13 +23,12 @@ This project is an advanced version of a previous repo called "savage-complete" 
 
 
 ## How It's Made:
-Tech used: JavaScript, Node.js. Express.js, EJS, MongoDB, Passport.js
+Tech used: JavaScript, Node.js. Express.js, EJS, MongoDB, Passport.js, CSS
 
-This is a full stack message board that allows you to enter a message, upvote, downvote, and delete your and other messages. You must make an account and log in to add to view and add to the message board.
-
+This is a dynamic appointment scheduler that allows you to add appointments, edit, and delete.
 
 ## Lessons Learned:
-I worked with passport.js the first time and learned more about requiring authentication from users. 
+I learned how to grab information from the database and autopopulate it into another field. I also learned how to modify dates using the Javascript Date object.
 
 ## Examples:
 Take a look at similar projects!
