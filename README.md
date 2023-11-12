@@ -28,18 +28,16 @@ Tech used: JavaScript, Node.js. Express.js, EJS, MongoDB, Passport.js, CSS
 This is a dynamic appointment scheduler that allows you to add appointments, edit, and delete.
 
 ## Lessons Learned:
-I learned how to grab information from the database and autopopulate it into another field. I also learned how to modify dates using the Javascript Date object.
+I learned how to grab information from the database and auto-populate it into another field. I also learned how to modify dates using the Javascript Date object.
 
 ## Examples:
 Take a look at similar projects!
 
-Packing List:
+Packing List: https://github.com/JacinthaDev/personal-express
 
-Library Catalog:
+Library Catalog: https://github.com/JacinthaDev/personalfullstack2
 
-Appointment Scheduler:
-
-#### Backend Technologies
+## Backend Technologies
 MongoDB Atlas: https://www.mongodb.com/atlas/database
 
 
