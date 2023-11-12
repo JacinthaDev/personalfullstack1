@@ -28,7 +28,7 @@ Tech used: JavaScript, Node.js. Express.js, EJS, MongoDB, Passport.js, CSS
 This is a dynamic appointment scheduler that allows you to add appointments, edit, and delete.
 
 ## Lessons Learned:
-I learned how to grab information from the database and auto-populate it into another field. I also learned how to modify dates using the Javascript Date object.
+I learned how to use a form to update (PUT) information submitted by a different form. To do this I had to stop the default action of a form which is to GET regardless of which action you put on the form in the HTML. I also learned how to modify dates using the Javascript Date object.
 
 ## Examples:
 Take a look at similar projects!
