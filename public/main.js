@@ -61,7 +61,7 @@ Array.from(trash).forEach(function(element) {
         const id = appointment.childNodes[1].innerText
         const name = appointment.childNodes[3].innerText
         const reason = appointment.childNodes[5].innerText
-        const date = appointment.childNodes[7].innerText
+        const date = appointment.childNodes[12].innerText
 
         fetch('appointments', {
           method: 'delete',
@@ -74,7 +74,6 @@ Array.from(trash).forEach(function(element) {
             'date': date
           })
         }).then(function (response) {
-          appointment.remove()
           window.location.reload()
         })
       });
